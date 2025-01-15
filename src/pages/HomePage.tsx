@@ -8,7 +8,9 @@ import Header from "../components/Header";
 const HomePage = () => {
   return (
     <>
-      <Header /> <Banner /> <Categories /> <Cards /> <Footer />
+      <div className="bg-white">
+        <Header /> <Banner /> <Categories /> <Cards /> <Footer />
+      </div>
     </>
   );
 };

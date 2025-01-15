@@ -1,15 +1,13 @@
+import bird from "../assets/paintings/bird.jpg";
 interface CardProps {
   item: string;
 }
 
 const Card: React.FC<CardProps> = ({ item }: CardProps) => {
   return (
-    <div className="card bg-base-100 w-96 shadow-xl">
+    <div className="card bg-beige w-96 shadow-xl">
       <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
-        />
+        <img src={bird} alt="Shoes" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{item}</h2>

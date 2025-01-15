@@ -11,47 +11,23 @@ const imageData = [
     src: "https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp",
     alt: "Burger 3",
   },
-  {
-    src: "https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp",
-    alt: "Burger 4",
-  },
-  {
-    src: "https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp",
-    alt: "Burger 5",
-  },
-  {
-    src: "https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp",
-    alt: "Burger 6",
-  },
-  {
-    src: "https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp",
-    alt: "Burger 7",
-  },
-  {
-    src: "https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp",
-    alt: "Burger 7",
-  },
-  {
-    src: "https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp",
-    alt: "Burger 7",
-  },
-  {
-    src: "https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp",
-    alt: "Burger 7",
-  },
-  {
-    src: "https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp",
-    alt: "Burger 7",
-  },
 ];
 
 const Categories = () => {
   return (
-    <div className="carousel rounded-box">
-      <div className="carousel-item">
-        {imageData.map((item) => {
-          return <img className="lg:h-64" src={item.src} alt={item.alt} />;
-        })}
+    <div className="flex items-center justify-center">
+      <div className=" carousel items-center">
+        <div className="carousel-item gap-5 mt-4 mb-4">
+          {imageData.map((item) => {
+            return (
+              <img
+                className="lg:h-40 lg:w-40 rounded-full"
+                src={item.src}
+                alt={item.alt}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
